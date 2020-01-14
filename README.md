@@ -78,4 +78,4 @@ plt.savefig("Tetarenko_jet")
 
 which produces:
 
-![](https://github.com/pssncp142/vdLJet/tree/master/results/Tetarenko_jet.png)
+![](results/Tetarenko_jet.png)
