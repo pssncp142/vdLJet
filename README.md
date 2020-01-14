@@ -8,7 +8,7 @@ This package requires cython and openmp.
 
 To install :
 ```
-
+pip install -e git://github.com/pssncp142/vdLJet.git#egg=vdLModel
 ```
 
 # Usage
