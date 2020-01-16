@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup, find_namespace_packages
 from distutils.extension import Extension
 from Cython.Build import cythonize
 import numpy as np
@@ -12,4 +12,8 @@ ext_modules = [
             )
 ]
 
-setup(name="vdLModel", ext_modules=cythonize(ext_modules))
+setup(name="vdLModel",  
+    package_dir={'': 'src'},
+    packages=find_namespace_packages(where='src'),
+    ext_modules=cythonize(ext_modules)
+    )
